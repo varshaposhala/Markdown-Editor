@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL  Formatter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<center>
+    <h1>SQL  Formatter</h1>
+</center>
+<div class="container">
+
+    <div>
+        Enter text with line breaks to "\n", so all text is in a single line.
+        <div>
+            <h2>Input (text without '\n')</h2>
+            <textarea id="input1"></textarea>
+            <br><button id="process" onClick="onProcess()">Process</button>
+        </div>
+
+        <div>
+            <h2>Output (Single line text with '\n')</h2>
+            <textarea id="output1"></textarea>
+        </div>
+        
+    </div>
+    <div>
+        Enter text with "\n" to line breaks , so all text is in a readable format.
+        <div>
+            <h2>Input (Single line text with '\n')</h2>
+            <textarea id="input2"></textarea>
+            <br><button id="process" onClick="offProcess()">Process</button>
+        </div>
+
+        <div>
+            <h2>Output (text without '\n')</h2>
+            <textarea id="output2"></textarea>
+        </div>
+       
+    </div>
+    <div>
+        Enter markdown text to add \ before _ , so all text is in a readable format in markdown format.
+        <div>
+            <h2>Input (Markdown text with _ without \)</h2>
+            <textarea id="input3"></textarea>
+            <br><button id="process" onClick="offonProcess()">Process</button>
+        </div>
+
+        <div>
+            <h2>Output (text with '\_')</h2>
+            <textarea id="output3"></textarea>
+        </div>
+       
+    </div>
+    
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+<script src="script.js"></script>
+
+</html>
